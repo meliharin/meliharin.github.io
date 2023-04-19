@@ -1,46 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Welcome to My Website</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, lorem id malesuada consectetur, erat enim consequat augue, nec vulputate neque quam eget orci. Nullam condimentum sem eget metus dictum, nec dignissim lectus vestibulum.</p>
-        </section>
-        <section>
-            <h2>About Us</h2>
-            <p>Phasellus mattis risus nec sem porta, eu elementum ipsum malesuada. Nulla a nisl eget justo scelerisque auctor vel vel dolor. Duis rutrum consectetur tortor, id pellentesque ex suscipit sed. Donec accumsan blandit augue, id bibendum quam dignissim at.</p>
-        </section>
-        <section>
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 My Website. All rights reserved.</p>
-    </footer>
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <header>
+        <h2>My First Blog Post</h2>
+        <p>Posted on <time datetime="2023-04-19">April 19, 2023</time></p>
+      </header>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, lorem id malesuada consectetur, erat enim consequat augue, nec vulputate neque quam eget orci. Nullam condimentum sem eget metus dictum, nec dignissim lectus vestibulum.</p>
+      <p>Integer viverra commodo ligula, eu commodo ipsum scelerisque in. Vestibulum commodo dui eu tortor consectetur commodo. Vestibulum nec nisl odio. Praesent blandit velit eu nisl efficitur facilisis. Duis at quam a libero dapibus faucibus vel eu purus.</p>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2023 My Blog. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+Bu temel bir HTML şablonudur ve blog sayfası için gerekli olan yapıya sahiptir. Şimdi, bu şablonu stil ile birleştirmek için style.css adlı bir dosya oluşturun ve aşağıdaki kodu ekleyin:
+
+css
+Copy code
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+article {
+  margin-bottom: 2rem;
+}
+
+article header {
+  margin-bottom: 1rem;
+}
+
+article header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+article header p {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+article p {
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+
+
+Regenerate response
